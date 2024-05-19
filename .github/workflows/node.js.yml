@@ -49,4 +49,4 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         # Deploy to Netlify dev environment
-        run: npx netlify-cli deploy --dir=build --alias=dev
+        run: npx netlify-cli deploy --dir=build --alias=dev --prod
